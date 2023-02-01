@@ -40,7 +40,7 @@ if filename.is_file():
 
     for city in city_names:
         if data.iloc[-1][city] < data.iloc[-2][city]:
-            print(f'Wait time decreased at {city}')
+            print(f'Wait time decreased at {city}. <<<<<<<<<<<<<<')
         elif data.iloc[-1][city] >= data.iloc[-2][city]:
             print(f'Wait time same or increased at {city}.')
 else:
